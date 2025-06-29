@@ -1,0 +1,175 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root{
+    --pic-blue:#39A4E5; /* (piction blue) */
+    --sv-blue:#395de5; /* (savoy blue) */
+    --sv-blue-a:rgba(57, 93, 229,.5); /* (savoy blue alpha channel) */
+    --white: #f2f0ef;
+    --dk-gray: #a9a9a9;
+    --heading-font: "Pixelify Sans", sans-serif; 
+    --body-font: "Ubuntu", sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 0;
+    font-family: var(--body-font);
+    color: var(--white);
+    /*background */
+    background: linear-gradient(315deg, transparent 75%, #5586d4 0)-10px 0,
+    linear-gradient(45deg, transparent 75%, #5586d4 0)-10px 0,
+    linear-gradient(135deg, #2b67a7 50%, transparent 0) 0 0,
+    linear-gradient(45deg, #1b386a 50%, #163a56 0) 0 0 #163a56;
+    background-size: 20px 20px;
+}
+
+header{
+    width: 1000px;
+    height: 227px;
+    margin: 0 auto;
+    background-color: var(--pic-blue);
+}
+
+#logo{
+    width: 90px;
+    height: auto;
+    position: absolute;
+    left: 40px;
+    top: 25px;
+}
+
+#title-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+}
+
+h1{
+    font-family: var(--heading-font);
+    font-size: 4rem;
+    text-align: center;
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    width: 664px;
+    margin: 1rem auto;
+}
+
+ul a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--sv-blue);
+    font-size: 1.5rem;
+}
+
+ul a:focus{
+    outline: 3px solid var(--sv-blue);  
+}
+
+
+ul a:hover{
+    background-color: var(--white);
+    color: var(--sv-blue);
+}
+
+main{
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    background-color: var(--sv-blue-a);
+}
+
+#history{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding:5rem 0 8rem;
+    margin: 0 auto;
+}
+
+iframe{
+    margin: auto;
+    padding-right: 1rem;
+}
+
+h2{
+    font-size: 2.5rem;
+    padding-left: 1.5rem;
+}
+
+p{
+    font-size: 1.2rem;
+    padding: 0 1rem;
+    text-align: justify;
+}
+
+footer{
+    width: 1000px;
+    background-color: var(--pic-blue);
+    height: 75px;
+    margin: 0 auto;
+}
+
+footer p{
+    margin: 0 auto;
+    padding: 1.4rem 1rem;
+    width: 65ch;
+    text-align: center;
+}
+
